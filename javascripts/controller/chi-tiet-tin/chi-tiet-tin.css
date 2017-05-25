@@ -1,0 +1,32 @@
+/*.cct-box-content{
+
+}
+.ctt-title{
+    font-size: 28px;
+}
+.tt-box{
+    width: 35% !important;
+}
+.cct-end{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 30px;
+    color: red;
+}
+#post-comment-btn{
+    background-color: #6CBB45 !important;
+    border-color: #6CBB45 !important;
+    border-radius: 0px !important;
+}
+#post-comment-btn:hover{
+    background-color: #6CBB45 !important;
+    border-color: #6CBB45 !important;
+    opacity: 0.8;
+}*/
+
+.sociable-icon{
+    cursor: pointer;
+}
+.google-plus-icon:hover{
+    background-color: #CE3C2D;
+}

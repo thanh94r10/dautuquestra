@@ -1,0 +1,193 @@
+.qdt-header-title{
+    color: #F00E1B;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px; 
+    background-color: #EFEFEF;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 0px;
+}
+.cac-goi-dau-tu-box{
+    border-bottom: 1px solid lightgrey;
+}
+.cac-goi-dau-tu-box > .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cac-goi-dau-tu-title{
+    color: #F00E1B;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.qdt-button-overlay{
+    width:100%;
+    height:100%;
+    display:none;
+    position:absolute;
+    top:35%;
+    left:0px;
+}
+
+.qdt-button-overlay:hover{
+    width: 80px;
+    height: 80px;
+    display: block !important; 
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    border-radius: 50% !important;
+    background-color: #6CBB45 !important;
+    border-color: #6CBB45 !important;
+}
+
+.qdt-img-icon:hover{
+    opacity:0.4;
+    cursor: pointer;
+}
+
+.qdt-img-icon:hover + button{
+    display: block !important; 
+    border-radius: 50% !important;
+}
+
+.phuong-thuc-thanh-toan-box{
+    background-color: #EFEFEF;
+    /*margin-bottom: 100px;*/
+    border: 1px solid darkgrey;
+}
+.phuong-thuc-thanh-toan-title{
+    text-align: center;
+    color: #6CBB45;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.pay-way-slider{
+    text-align: center;
+}
+.outside{
+    float: right;
+    margin-top: -30px;
+}
+.bx-prev > img {
+    background-color: #A8A8A8;
+}
+.bx-next > img {
+    background-color: #A8A8A8;
+}
+.bx-wrapper {
+    -moz-box-shadow: 0 0 5px #ccc !important;
+    /*-webkit-box-shadow: 0 0 5px #ccc;*/
+    box-shadow: 0 0 0px transparent !important;
+    border: 0px solid #efefef !important;
+    background: #efefef !important;
+}
+.pay-way-slider-bxslider{
+    text-align: -webkit-center;
+}
+
+.goi-dau-tu-white-box, 
+.goi-dau-tu-yellow-box,
+.goi-dau-tu-green-box,
+.goi-dau-tu-blue-box,
+.goi-dau-tu-red-box,
+.goi-dau-tu-black-box{
+    /*margin-top: 50px;*/
+    /*margin-bottom: 50px;*/
+}
+.goi-dau-tu-white-icon{
+    text-align: center;
+}
+.goi-dau-tu-white-icon-title{
+    border: 4px dotted red;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: yellow;
+    color: green !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.white-box-info-left > .panel-default > .panel-body{
+    padding: 10px !important;
+}
+.pricing-table-wrap{
+    border-color: #e1e1e1;
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.line-dotted, .line-solid{
+    border:none;
+    border-top:1px dashed #E1E1E1;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+}
+.line-solid{
+    border-top:1px solid #E1E1E1;
+}
+.white-box-info-left-title, .white-box-info-left-title-last{
+    text-align: right;
+    border-top: 1px dashed #E1E1E1;
+    height: 40px;
+    padding-top: 12px;
+    padding-right: 5px;
+}
+.white-box-info-left-title-last{
+    border-bottom: 1px solid #E1E1E1;
+}
+
+
+.white-box-info-right-title-1, 
+.white-box-info-right-title-2,
+.white-box-info-right-title-1-first,
+.white-box-info-right-title-2-last{
+    height: 50px;
+    padding-top: 12px;
+    border-top: 1px solid #E1E1E1;
+    background-color: #FCFCFC;
+    margin-bottom: 0px;
+    border-left: 1px solid #E1E1E1;
+    border-right: 1px solid #E1E1E1;
+    text-align: center;
+}
+.white-box-info-right-title-2{
+    background-color: #FFF;
+}
+.white-box-info-right-title-1-first{
+    border-radius: 5px 5px 0px 0px;
+}
+.white-box-info-right-title-2-last{
+    border-radius: 0px 0px 5px 5px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+
+
+.goi-dau-tu-yellow-box,
+.goi-dau-tu-blue-box,
+.goi-dau-tu-black-box{
+    background-color: #EFEFEF;
+    margin-top: 50px;
+}
+.goi-dau-tu-white-box > .container > .row,
+.goi-dau-tu-green-box > .container > .row,
+.goi-dau-tu-red-box > .container > .row,
+.goi-dau-tu-yellow-box > .container > .row,
+.goi-dau-tu-blue-box > .container > .row,
+.goi-dau-tu-black-box > .container > .row{
+    margin-top: 50px;
+    /*margin-bottom: 50px;*/
+}
+
+.box-grey{
+    background-color: white;
+}

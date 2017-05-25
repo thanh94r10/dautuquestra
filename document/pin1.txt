@@ -1,0 +1,10 @@
+Hiệu suất sạc:65%Đèn 
+LED báo hiệu:CóThời 
+gian sạc:3-4 giờ (dùng Adapter 2A), 5-6 giờ (dùng Adapter 1A)
+Nguồn vào:5V-2.1A
+Cổng ra USB 1:5V-2.1A
+Cổng ra USB 2:Không.
+Kích thước (NxDxC):Dài 9cm x ngang 5cm x 2.5cm
+Tự ngắt khi sạc đầy điện thoại: Không
+Trọng lượng:<200gr
+Bộ bán hàng chuẩn:Pin sạc dự phòng

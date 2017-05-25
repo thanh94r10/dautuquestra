@@ -1,0 +1,206 @@
+<!--<div dw-loading="key" dw-loading-options="{spinnerOptions: {lines: 20, length: 20, radius: 20}}">-->
+<div ng-if="!vm.isAdmin">
+	<nav class="navbar navbar-default navbar-fixed-top pt-navbar">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header" style="">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				 aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand qt-navbar-brand" ui-sref="start"><img ng-src="style/icon/logoquestra.png" alt="Dispute Bills"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav" style="margin-left: 80px;">
+					<li class="dropdown qt-dropdown-questra-europe main-menu">
+						<a href="#" class="dropdown-toggle qt-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">QUESTRA EUROPE</a>
+						<ul class="dropdown-menu">
+							<li><a ui-sref="start.gioi-thieu">Giới thiệu Questra</a></li>
+							<li><a ui-sref="start.ban-lanh-dao">Ban Lãnh Đạo QUESTRA</a></li>
+							<li><a ui-sref="start.tam-nhin">Tầm Nhìn QUESTRA</a></li>
+						</ul>
+					</li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li class="qt-item-menu main-menu"><a ui-sref="start.quy-dau-tu">GÓI ĐẦU TƯ</a></li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(3)">HỖ TRỢ GIAO DỊCH</a></li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(1)">TIN TỨC</a></li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(2)">ĐẦU TƯ TÀI CHÍNH</a></li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li class="qt-item-menu main-menu"><a ui-sref="start.dang-ky">ĐĂNG KÝ THAM GIA</a></li>
+					<!--<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>-->
+				</ul>
+				<!--<form id="mega-search" class="navbar-form">
+					<button class="btn btn-default qt-btn-search" type="button">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>-->
+			</div>
+		</div>
+	</nav>
+
+	<div id="" class="carousel slide carousel-example-generic">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li ng-class="{active:!$index}" ng-repeat="slide in vm.slidesData" data-target=".carousel-example-generic" data-slide-to="{{$index}}"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+
+			<!-- First slide -->
+			<div class="item" ng-class="{active:!$index}" ng-repeat="slide in vm.slidesData">
+				<img class="qt-full-img-carousel" ng-src="{{slide.src}}" alt="Chicago" style="height: 450px;">
+				<div class="carousel-caption">
+					<h3 class="text-caption-carousel" data-animation="animated bounceInUp">
+						{{slide.caption1}}
+					</h3>
+					<h3 class="text-caption-carousel" style="margin-left: 10%;" data-animation="animated bounceInUp">
+						{{slide.caption2}}
+					</h3>
+					<button ng-click="vm.register()" class="btn btn-primary btn-lg qt-btn-register" data-animation="animated zoomInRight">{{slide.nameBtn}}</button>
+				</div>
+			</div>
+		</div>
+
+		<a class="left carousel-control" href=".carousel-example-generic" role="button" data-slide="prev" ng-non-bindable>
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="margin-left: -45%;"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href=".carousel-example-generic" role="button" data-slide="next" ng-non-bindable>
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="margin-right: -45%;"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div ng-include="vm.homepageTemplate"></div>
+	<button ng-click="vm.topFunction()" id="onTop" title="Go to top"><i class="fa fa-arrow-up up-icon" aria-hidden="true"></i></button>
+	<!--<button class="on-to-top btn btn-success"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>-->
+	<div class="col-md-12 qt-footer-box qt-post">
+		<div class="container" style="margin-bottom: 50px; padding-top: 50px;">
+			<div class="row">
+				<div class="col-md-4">
+					<p style="text-align: center; color: white; font-size: 20px; ">
+						LIÊN HỆ TÌM HIỂU DỰ ÁN
+					</p>
+					<p class="left-footer-title1">TUỆ HIẾU - JACKIE LE (Mr)</p>
+					<div class="inline" style=" cursor: pointer;" ng-click="vm.linkRegister()">
+						<img class="inline" ng-src="style/icon/footer/questra.png" style="width: 20px;" />
+						<p class="inline footer-id">ID: P09201483790591 (Jackie)</p>
+					</div>
+					<div class="inline" style="">
+						<img class="inline" ng-src="style/icon/footer/phone.png" style="width: 20px;" />
+						<p class="inline footer-id">090.838.6268 – 0967.62.7791</p>
+					</div>
+					<div class="inline" style="">
+						<img class="inline" ng-src="style/icon/footer/mail.png" style="width: 20px;" />
+						<p class="inline footer-id">atlanticgamvietnam.com@gmail.com</p>
+					</div>
+					<div class="inline" style=" width: 100%;">
+						<img class="inline" ng-src="style/icon/footer/zalo.png" style="width: 20px;" />
+						<p class="inline footer-id">+84908386268</p>
+					</div>
+					<br>
+					<div class="inline" style="">
+						<img class="inline" ng-src="style/icon/footer/send.png" style="width: 20px;" />
+						<p class="inline footer-id">+84908386268</p>
+					</div>
+					<div class="inline" style=" cursor: pointer;" ng-click="vm.linkFaceFooter()">
+						<img class="inline" ng-src="style/icon/footer/face.png" style="width: 20px;" />
+						<p class="inline footer-id">Atlanticgam Vietnam Facebook</p>
+					</div>
+					<div class="inline" style=" cursor: pointer;" ng-click="vm.linkTubeFooter()">
+						<img class="inline" ng-src="style/icon/footer/youtube.png" style="width: 20px;" />
+						<p class="inline footer-id">Atlanticgam Viet Nam Youtube</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<p style="text-align: center; color: white; font-size: 20px; ">
+						ĐĂNG KÝ THAM GIA
+					</p>
+					<div class="inline" style="">
+						<img class="inline" ng-src="style/icon/footer/gift.ico" style="width: 20px; margin-right: 15px;" />
+						<p class="" style="font-size: 18px; color: white;">Tặng ngay 1.000.000VNĐ vào tài khoản khi đầu tư vào gói 2430 Euro.</p>
+					</div>
+					<div class="inline" style="">
+						<img class="inline" ng-src="style/icon/footer/gift.ico" style="width: 20px; margin-right: 15px;" />
+						<p class="" style="font-size: 18px; color: white;">Tặng ngay 3.000.000VNĐ vào tài khoản khi đầu tư vào gói 7290 Euro.</p>
+					</div>
+					<div class="inline" style="">
+						<img class="inline" ng-src="style/icon/footer/gift.ico" style="width: 20px; margin-right: 15px;" />
+						<p class="" style="font-size: 18px; color: white;">Tặng ngay 9.000.000VNĐ vào tài khoản khi đầu tư vào gói 21870 Euro.</p>
+					</div>
+					<img src="style/icon/register.gif" alt="Đăng ký tham gia" style="cursor: pointer;" ng-click="vm.register()" />
+					<!--<p style="" ng-click="vm.register()" class="goi-dau-tu-white-icon-title">Click để đăng ký tham gia ngay !</p>-->
+					<!--<a class="btn btn-info btn-dang-ky" href="https://goo.gl/forms/8DA9bUVew7811spn1" style="border-radius: 15px;" target="_blank">Click để đăng ký tham gia ngay !</a>-->
+				</div>
+				<div class="col-md-4">
+					<p style="text-align: center; color: white; font-size: 20px; ">
+						NHẬN THÔNG TIN QUA EMAIL
+					</p>
+					<p style="text-align: justify;text-justify: inter-word; color: white; font-size: 18px;  margin-top: 20px;">
+						Vui lòng nhập email của bạn để chúng tôi có thể gửi tặng tới bạn những món quà cũng như những thông tin mới nhất về Atlanticgam
+						Việt Nam.
+					</p>
+					<div class="f-receive-email-box">
+						<input class="form-control" placeholder="Nhập email hoặc số điện thoại của bạn" ng-model="vm.email" />
+						<button class="btn btn-info btn-submit-email" ng-click="vm.registerEmail()">Gửi</button>
+					</div>
+					<p style="text-align: center; color: white; font-size: 12px;">(* Atlanticgam Việt Nam cam kết bảo mật mọi thông tin của Bạn)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<strong class="col-md-10" style="float: left;">Copyright © - Atlanticgam Việt Nam All rights reserved.</strong> 
+		<div class="col-md-2" style="float: right;">
+			<b>Version</b> 1.0.0
+		</div>
+	</div>
+</div>
+<div ng-if="vm.isAdmin">
+	<div ng-include="vm.templateAdmin"></div>
+</div>
+<aside id="sticky-social">
+	<ul>
+		<li><a href="https://www.facebook.com/Atlanticgam.Vietnam/" class="entypo-facebook" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i><span>Facebook</span></a></li>
+		<li><a href="https://plus.google.com/u/1/118035589625567301650" class="entypo-gplus" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i><span>Google+</span></a></li>
+		<li><a href="https://www.youtube.com/channel/UC_WaV2Pu3NLEkaFcRtRXw2A" class="entypo-pinterest" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i><span>Youtube</span></a></li>
+		<li><a href="https://private.atlanticgam.es/#/sign-up/partner=P09201483790591" class="entypo-twitter" target="_blank"><img src="style/icon/questra.png" width="20px;"><span>Questra</span></a></li>
+	</ul>
+</aside>
+
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body pop-up-ad-body">
+				<button type="button" class="btn btn-default" data-dismiss="modal" style="position: absolute; right: 2px;">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>
+				<img src="style/icon/advertisement.jpg" alt="Hình ảnh khuyến mãi" style="width: 100%" />
+				<img class="btn-click-ad" ng-click="vm.viewAd()" src="style/icon/click.png" />
+			</div>
+			<div class="modal-footer">
+				<p style="text-align: left;">Hãy để lại email của bạn để chúng tôi có thể gửi tặng tới bạn những món quà cũng như những thông tin mới nhất về Atlanticgam
+					Việt Nam. Cảm ơn!
+				</p>
+				<div class="row">
+					<div class="form-group col-md-10">
+						<input type="email" ng-model="vm.email" class="form-control" placeholder="Nhập email của bạn rồi click nút đăng ký...">
+					</div>
+					<div class="col-md-2" style="margin-left: -25px;">
+						<button type="submit" ng-click="vm.registerEmail()" class="btn btn-success">Đăng ký</button>
+					</div>
+				</div>
+				<p style="text-align: center;">(* Atlanticgam Việt Nam cam kết bảo mật mọi thông tin của Bạn)</p>
+			</div>
+		</div>
+
+	</div>
+</div>

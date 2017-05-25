@@ -1,0 +1,21 @@
+.kttc-header{
+    color: #e25626;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-left: -8px;
+    line-height: 150%;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.khungxanhla {
+    background: #acca6a;
+    padding: 15px 15px 5px 15px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+.hinhtext > p{
+    margin-top: 0;
+    margin-bottom: 10px;
+}

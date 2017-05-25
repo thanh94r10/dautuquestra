@@ -1,0 +1,42 @@
+.bld-tin-tuc-box{
+    height: 100px;
+    background-color: #EDEDED;
+    border-bottom: 1px solid darkgrey;
+}
+.tt-header-line{
+    border-bottom: 1px solid grey;
+    padding-top: 50px;
+}
+.tt-header-text{
+    text-align: right;
+    /* float: left; */
+    padding-top: 33px;
+    color: red;
+    font-size: 22px;
+}
+.bld-tin-tuc-box-content{
+    background-color: #eeeeee !important;
+}
+.bld-tin-tuc-box-content > .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.tt-title{
+    color: black;
+    font-size: 23px;
+}
+.tt-title:hover{
+    color: red;
+}
+.tt-time{
+    margin-top: -5px;
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.tt-readmore{
+    color: red;
+}
+.tt-readmore:hover{
+    color: red;
+}

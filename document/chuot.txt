@@ -1,0 +1,12 @@
+DateTime timeCreated = DateTime.Now;
+                CustomerMessage message = new CustomerMessage();
+                message.IdUserFrom = model.UserIdFrom;
+                message.IdUserTo = model.UserIdTo;
+                message.Readed = false;
+                message.Important = false;
+                message.MessageContent = model.MessageContent;
+                ViewCustomerMessageModel view = new ViewCustomerMessageModel(message);
+                view.Id = _customerMessageService.Create(message).Id;
+				
+				
+				21-10-2016 14:18:59

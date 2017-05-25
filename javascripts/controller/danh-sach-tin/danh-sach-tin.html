@@ -1,0 +1,71 @@
+<!--<div class="bld-tin-tuc-box">
+    <div class="container">
+        <div class="row">
+            <p class="col-md-5 tt-header-text">Danh sách tin</p>
+            <p class="col-md-7 tt-header-line"></p>
+        </div>
+    </div>
+</div>-->
+
+<div class="bld-tin-tuc-box-content">
+    <div class="container">
+        <div class="box box-solid" ng-repeat="content in vm.body.contentList">
+            <div ng-if="$even" when-visible="vm.animateElementInEvent" when-not-visible="vm.animateElementOutEvent">
+                <div class="box-header with-border">
+                    <i class="fa fa-text-width"></i>
+                    <h3 class="box-title">{{vm.titleList}}</h3>
+                </div>
+                <div class="box-body">
+                    <div class="row" style="">
+                        <div class="col-md-4">
+                            <img style="max-height: 250px; max-width: 250px;" ng-src="{{content.image}}" alt="Chicago" style="">
+                        </div>
+                        <div class="col-md-8">
+                            <p style="cursor: pointer;" ng-click="vm.viewDetail(content.id)" class="tt-title">{{content.title}}</p>
+                            <p class="tt-time">{{content.TimePost | date: 'dd-MM-yyyy HH:mm:ss'}}</p>
+                            <p class="tt-content-text">
+                                {{content.shortDesc}}
+                            </p>
+                            <a class="tt-readmore" ng-click="vm.viewDetail(content.id)">Read more... <i style="font-size: 12px;" class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="!$even" when-visible="vm.animateElementInOod" when-not-visible="vm.animateElementOutOod">
+                <div class="box-header with-border">
+                    <i class="fa fa-text-width"></i>
+                    <h3 class="box-title">{{vm.titleList}}</h3>
+                </div>
+                <div class="box-body">
+                    <div class="row" style="">
+                        <div class="col-md-8">
+                            <p style="cursor: pointer;" ng-click="vm.viewDetail(content.id)" class="tt-title">{{content.title}}</p>
+                            <p class="tt-time">{{content.TimePost | date: 'dd-MM-yyyy HH:mm:ss'}}</p>
+                            <p class="tt-content-text">
+                                {{content.shortDesc}}
+                            </p>
+                            <a class="tt-readmore" ng-click="vm.viewDetail(content.id)">Read more... <i style="font-size: 12px;" class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-md-4">
+                            <img style="max-height: 250px; max-width: 250px;" ng-src="{{content.image}}" alt="Chicago" style="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box box-solid">
+            <div class="box-header with-border">
+                <div pro-pagination="vm.pagination"></div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-7">
+
+            </div>
+        </div>
+    </div>
+</div>
