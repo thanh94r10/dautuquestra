@@ -30,3 +30,8 @@
 .google-plus-icon:hover{
     background-color: #CE3C2D;
 }
+.custom-color-hearder{
+    text-align: center !important;
+    background-color: red !important;
+    color: white !important;
+}

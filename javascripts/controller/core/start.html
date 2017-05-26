@@ -2,21 +2,12 @@
 <div ng-if="!vm.isAdmin">
 	<nav class="navbar navbar-default navbar-fixed-top pt-navbar">
 		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header" style="">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-				 aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand qt-navbar-brand" ui-sref="start"><img ng-src="style/icon/logoquestra.png" alt="Dispute Bills"></a>
-			</div>
-
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav" style="margin-left: 80px;">
+					<li class="qt-item-menu main-menu">
+						<a class="navbar-brand qt-navbar-brand" ui-sref="start"><img ng-src="style/icon/logoquestra.png" alt="Dispute Bills"></a>
+					</li>
 					<li class="dropdown qt-dropdown-questra-europe main-menu">
 						<a href="#" class="dropdown-toggle qt-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">QUESTRA EUROPE</a>
 						<ul class="dropdown-menu">
