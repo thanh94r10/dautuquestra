@@ -30,7 +30,7 @@
     left:0px;
 }
 
-/*.qdt-button-overlay:hover{
+.qdt-button-overlay:hover{
     width: 80px;
     height: 80px;
     display: block !important; 
@@ -40,7 +40,7 @@
     border-radius: 50% !important;
     background-color: #6CBB45 !important;
     border-color: #6CBB45 !important;
-}*/
+}
 
 .qdt-img-icon:hover{
     opacity:0.4;
@@ -49,10 +49,6 @@
 
 .qdt-img-icon:hover + button{
     display: block !important; 
-    width: 80px;
-    height: 80px;
-    top: 35%;
-    left: 40%;
     border-radius: 50% !important;
 }
 

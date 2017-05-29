@@ -21,7 +21,7 @@
         $rootScope.$on('$stateChangeStart', stateChangeStart);
         $rootScope.$on('$stateChangeSuccess', stateChangeSuccess);
         $rootScope.$on('$viewContentLoaded', function () {
-        });
+        }); 
 
         
         CKEDITOR.editorConfig = function (config) {
