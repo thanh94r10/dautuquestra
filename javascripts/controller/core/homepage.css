@@ -533,8 +533,8 @@ fieldset > input, .sa-error-container {
 
     /*chi tiết tin*/
     iframe, img {
-        max-height: 180px !important;
-        max-width: 330px !important;
+        max-height: 140px !important;
+        max-width: 250px !important;
     }
 
     .qt-dropdown-questra-europe, .qt-item-menu{

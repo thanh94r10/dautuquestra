@@ -40,27 +40,6 @@
             $state.go('start.danh-sach-tin', { cateId: title });
         }
 
-        // if ($localStorage.id !== null) {
-        //     if (!vm.isAdmin) {
-        //         getProfile();
-        //     }
-        // }
-
-        // function getProfile() {
-        //     function successCallBack(response) {
-        //         if (response.status === 200) {
-        //             vm.isAdmin = true;
-        //         } else {
-        //             vm.isAdmin = false;
-        //         }
-        //     }
-        //     function errorCallBack(response) {
-        //         vm.isAdmin = false;
-        //         // $state.go('login');
-        //     }
-        //     accountService.getProfile().then(successCallBack, errorCallBack);
-        // }
-
         // Slider headr
         vm.slidesData = [
             {
