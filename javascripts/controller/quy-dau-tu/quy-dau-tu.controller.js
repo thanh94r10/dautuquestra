@@ -25,9 +25,17 @@
             }, 1000);
         }
 
+        var widthScreen = $(window).width();
+
+        var numSildes = 3;
+
+        if(widthScreen < 767){
+            numSildes = 1;
+        }
+
         $('.pay-way-slider-bxslider').bxSlider({
-            minSlides: 3,
-            maxSlides: 3,
+            minSlides: numSildes,
+            maxSlides: numSildes,
             slideWidth: 360,
             slideMargin: 10,
             nextSelector: '#slider-next',
@@ -36,7 +44,6 @@
             pager: false,
             nextText: '<img src="http://i.imgur.com/TZDsPC0.png" height="25" width="25"/>',
             prevText: '<img src="http://i.imgur.com/AKjTWvT.png" height="25" width="25"/>',
-            auto: true
         });
 
     };

@@ -23,6 +23,8 @@
 
         vm.goListPostPage = goListPostPage;
 
+        var widthScreen = $(window).width();
+
 
         function goListPostPage(id) {
             var title = '';
@@ -208,7 +210,9 @@
 
         /// open popup if have
         $timeout(function () {
-            $('#myModal').modal('show');
+            if (widthScreen > 767) {
+                $('#myModal').modal('show');
+            }
         }, 10000);
 
         vm.viewAd = function () {
@@ -239,6 +243,16 @@
 
         vm.viewDetail = function (id) {
             $state.go('start.chi-tiet-tin', { postId: id });
+        }
+
+        vm.toggleBtn =  function(){
+            if (widthScreen < 767) {
+                $( ".navbar-toggle" ).click();
+            }
+        }
+
+        if (widthScreen < 767) {
+            $('#main-nav').removeClass('navbar-fixed-top');
         }
 
     }

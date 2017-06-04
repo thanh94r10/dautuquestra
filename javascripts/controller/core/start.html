@@ -1,9 +1,7 @@
 <!--<div dw-loading="key" dw-loading-options="{spinnerOptions: {lines: 20, length: 20, radius: 20}}">-->
 <div ng-if="!vm.isAdmin">
-	<nav class="navbar navbar-default navbar-fixed-top pt-navbar">
+	<!--<nav class="navbar navbar-default navbar-fixed-top pt-navbar">
 		<div class="container">
-			
-			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav" style="margin-left: 80px;">
 					<li class="qt-item-menu main-menu">
@@ -27,15 +25,54 @@
 					<li class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(2)">ĐẦU TƯ TÀI CHÍNH</a></li>
 					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
 					<li class="qt-item-menu main-menu"><a ui-sref="start.dang-ky">ĐĂNG KÝ THAM GIA</a></li>
-					<!--<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>-->
 				</ul>
-				<!--<form id="mega-search" class="navbar-form">
-					<button class="btn btn-default qt-btn-search" type="button">
-						<i class="fa fa-search"></i>
-					</button>
-				</form>-->
 			</div>
 		</div>
+	</nav>-->
+
+	<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile" aria-expanded="false"
+				 aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+				<a class="navbar-brand qt-navbar-brand" ui-sref="start"><img ng-src="style/icon/logoquestra.png" alt="Dispute Bills"></a>
+			</div>
+			<div id="navbar-mobile" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+				<ul class="nav navbar-nav navbar-center">
+					<li class="dropdown qt-dropdown-questra-europe main-menu">
+						<a href="" class="dropdown-toggle qt-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">QUESTRA EUROPE</a>
+						<ul class="dropdown-menu">
+							<li ng-click="vm.toggleBtn()"><a ui-sref="start.gioi-thieu">Giới thiệu Questra</a></li>
+							<li ng-click="vm.toggleBtn()"><a ui-sref="start.ban-lanh-dao">Ban Lãnh Đạo QUESTRA</a></li>
+							<li ng-click="vm.toggleBtn()"><a ui-sref="start.tam-nhin">Tầm Nhìn QUESTRA</a></li>
+						</ul>
+					</li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li class="qt-item-menu main-menu"><a ui-sref="start.quy-dau-tu">GÓI ĐẦU TƯ</a></li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(3)">HỖ TRỢ GIAO DỊCH</a></li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(1)">TIN TỨC</a></li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(2)">ĐẦU TƯ TÀI CHÍNH</a></li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li class="qt-item-menu main-menu"><a ui-sref="start.dang-ky">ĐĂNG KÝ THAM GIA</a></li>
+				</ul>
+				<!--<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+					<li><a href="../navbar-static-top/">Static top</a></li>
+					<li><a href="../navbar-fixed-top/">Fixed top</a></li>
+				</ul>-->
+			</div>
+			
+		</div>
+		<!--/.mobile -->
+
 	</nav>
 
 	<div id="" class="carousel slide carousel-example-generic">
@@ -137,8 +174,8 @@
 						NHẬN THÔNG TIN QUA EMAIL
 					</p>
 					<p style="text-align: justify;text-justify: inter-word; color: white; font-size: 18px;  margin-top: 20px;">
-						Vui lòng nhập email hoặc số điện thoại của bạn để chúng tôi có thể gửi tặng tới bạn những món quà cũng như những thông tin mới nhất về Atlanticgam
-						Việt Nam.
+						Vui lòng nhập email hoặc số điện thoại của bạn để chúng tôi có thể gửi tặng tới bạn những món quà cũng như những thông tin
+						mới nhất về Atlanticgam Việt Nam.
 					</p>
 					<div class="f-receive-email-box">
 						<input class="form-control" placeholder="Nhập email hoặc số điện thoại của bạn" ng-model="vm.email" />
@@ -150,7 +187,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<strong class="col-md-10" style="float: left;">Copyright © - Atlanticgam Việt Nam All rights reserved.</strong> 
+		<strong class="col-md-10" style="float: left;">Copyright © - Atlanticgam Việt Nam All rights reserved.</strong>
 		<div class="col-md-2" style="float: right;">
 			<b>Version</b> 1.0.0
 		</div>
@@ -179,8 +216,8 @@
 				<img class="btn-click-ad" ng-click="vm.viewAd()" src="style/icon/click.png" />
 			</div>
 			<div class="modal-footer">
-				<p style="text-align: left;">Hãy để lại email hoặc số điện thoại của bạn để chúng tôi có thể gửi tặng tới bạn những món quà cũng như những thông tin mới nhất về Atlanticgam
-					Việt Nam. Cảm ơn!
+				<p style="text-align: left;">Hãy để lại email hoặc số điện thoại của bạn để chúng tôi có thể gửi tặng tới bạn những món quà cũng như những thông tin
+					mới nhất về Atlanticgam Việt Nam. Cảm ơn!
 				</p>
 				<div class="row">
 					<div class="form-group col-md-10">

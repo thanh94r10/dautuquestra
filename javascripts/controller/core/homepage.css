@@ -483,6 +483,101 @@ fieldset > input, .sa-error-container {
     background-color: red !important;
 }
 
+/*#navbar-mobile{
+    display: none !important;
+}*/
+
+.view-mobile{
+    display: none !important;
+}
+
+.navbar-default {
+    background-color: #73c04e !important;
+}
+
+@media screen and (min-width: 767px) {
+    .qt-navbar-brand{
+        margin-left: 100px !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .navbar-fixed-top{
+        position: relative !important;
+    }
+    #sticky-social{
+        display: none !important;
+    }
+    .qt-full-img-carousel{
+        height: 150px !important;
+    }
+    .text-caption-carousel{
+        font-size: 10px;
+    }
+    .carousel-caption{
+        bottom: 185px !important;
+    }
+    .qt-btn-register{
+        font-size: 10px !important;
+        width: 100px !important;
+    }
+    .carousel-example-generic{
+        height: 150px !important;
+    }
+    .carousel-example-generic{
+        margin-top: 5px !important;
+    }
+    .home-clip-youtube{
+        height: 180px !important;
+        width: 350px !important;
+    }
+
+    /*chi tiết tin*/
+    iframe, img {
+        max-height: 180px !important;
+        max-width: 330px !important;
+    }
+
+    .qt-dropdown-questra-europe, .qt-item-menu{
+        padding-left: 20px !important;
+        border-bottom: 1px solid white !important;
+    }
+    .qt-avia-bullet{
+        display: none !important;
+    }
+
+    .main-menu:hover {
+        background-color: #73c04e !important;
+    }
+    .qt-dropdown-toggle{
+        background-color: #73c04e !important;
+    }
+
+    .view-mobile{
+        display: block !important;
+    }
+
+    .view-desktop{
+        display: none !important;
+    }
+    .mb-result{
+        color: green;
+        font-weight: bold;
+    }
+
+    .qdt-header-title{
+        font-size: 18px !important;
+        line-height: 20px !important;
+        margin-top: 15px !important;
+    }
+    .sweet-alert{
+        margin-right: 15px !important; 
+    }
+
+    .normal-text-qt > img{
+        width: 100% !important;
+    }
+
+}
 
 
 

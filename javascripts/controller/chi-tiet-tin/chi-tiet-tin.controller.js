@@ -39,9 +39,6 @@
             function successCallBack(response) {
                 if (response.status === 200) {
                     vm.post = response.data;
-                    // vm.listHtgd = response.data.listHtgd;
-                    // vm.listKttc = response.data.listKttc;
-                    // vm.listTintuc = response.data.listTintuc;
                     var decodeDesc = $('<div/>').html(vm.post.description).text();
                     $('#DescEditor').html(decodeDesc);
                 }
@@ -63,18 +60,6 @@
             }
             commentService.getComment($stateParams.postId).then(successCallBack, errorCallBack);
         }
-
-        // for(var i = 0 ; i < 5 ; i++){
-        //     var ob = {
-        //         image: 'http://dautuquestra.azurewebsites.net//Content/Data/imagespost/2017-05-21T05-34-48-208gocdautu.png',
-        //         title: i + ' Hướng dẫn nhập thông tin cá nhân.',
-        //         TimePost: '2017-05-21T05:34:48.21',
-        //         shortDesc: 'Tập đoàn Atlantic Global Asset Management vui mừng thông báo về việc hoàn thành trong tuần làm việc hiện tại. Các nhà quản lý của Atlantic Global Asset Management đã một lần nữa chứng minh mức độ cao về tính chuyên nghiệp, thông qua một loạt các giao dịch sinh lợi cho công ty'
-        //     };
-        //     vm.listHtgd.push(ob);
-        //     vm.listKttc.push(ob);
-        //     vm.listTintuc.push(ob);
-        // }
 
         function postComment() {
 
