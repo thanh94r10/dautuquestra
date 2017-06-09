@@ -577,6 +577,10 @@ fieldset > input, .sa-error-container {
         width: 100% !important;
     }
 
+    .footer-tab-register{
+        margin-top: 220px;
+    }
+
 }
 
 
