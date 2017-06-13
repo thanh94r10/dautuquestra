@@ -206,7 +206,7 @@
 
             function successCallBack(response) {
                 if (response.status === 200) {
-                    angular.forEach(response.data.Data, function (element, index) {
+                    angular.forEach(response.data.Data.reverse(), function (element, index) {
                         if (index < 5) {
                             vm.listTin.push(element);
                         }
