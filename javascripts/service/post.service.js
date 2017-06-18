@@ -19,11 +19,7 @@
         ////////////////////////////
 
         function getAllPostById(cateId, sort, page, amount) {
-
-            if(sort === undefined){
-                sort = 'timepost_desc';
-            }
-
+            sort = 'timepost_desc';
             function successCallBack(response) {
                 angular.forEach(response.data.Data, function (element) {
                     element.image = CONSTANT.BASE_URL + element.image.substr(1);
