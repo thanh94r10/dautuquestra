@@ -45,7 +45,7 @@
 
         function init() {
             vm.body = {
-                contentList: dataListItem.data.Data.reverse()
+                contentList: dataListItem.data.Data
             };
             vm.pagination = {
                 page: dataListItem.data.Page,
@@ -66,7 +66,7 @@
         function getListtinTuc(page, amount) {
             function successCallback(response) {
                 if (response.status === 200) {
-                    vm.body.contentList = response.data.Data.reverse();
+                    vm.body.contentList = response.data.Data;
                     vm.totalPage = response.data.TotalPage;
                     vm.page = response.data.Page;
                     vm.pagination.amount = response.data.Amount;
