@@ -12,7 +12,8 @@
             getAllPostById: getAllPostById,
             getPostById: getPostById,
             getPostsRegarding: getPostsRegarding,
-            getListPostHome: getListPostHome
+            getListPostHome: getListPostHome,
+            getRecentPosts: getRecentPosts
         };
         return service;
 
@@ -83,6 +84,21 @@
                 return response;
             }
             return $http.get('api/PostNews/getListPostHome').then(successCallBack, errorCallBack);
+        }
+
+        function getRecentPosts(){
+            function successCallBack(response){
+                angular.forEach(response.data, function (e) {
+                    e.image = CONSTANT.BASE_URL + e.image.substr(1);
+                });
+                return response;
+            }
+
+            function errorCallBack(response){
+                return response;
+            }
+
+            return $http.get('api/PostNews/getRecentPosts').then(successCallBack, errorCallBack);
         }
     }
 })();

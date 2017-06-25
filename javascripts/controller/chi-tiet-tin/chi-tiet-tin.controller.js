@@ -30,9 +30,22 @@
         function init() {
             getPost();
             getComment();
-            getListTinTuc();
+            // getListTinTuc();
             getListHtgd();
             getListKttc();
+            getRecentPosts();
+        }
+
+        function getRecentPosts() {
+            function successCallBack(response) {
+                if (response.status == 200) {
+                    vm.listTintuc = response.data;
+                }
+            }
+            function errorCallBack(response) {
+
+            }
+            postService.getRecentPosts().then(successCallBack, errorCallBack);
         }
 
         function getPost() {
@@ -62,26 +75,32 @@
         }
 
         function postComment() {
-
-            function successCallBack(response) {
-                if (response.status === 200) {
-                    getComment();
-                    vm.comment = {
-                        PostNewId: $stateParams.postId,
-                        Name: '',
-                        Email: '',
-                        Website: '',
-                        content: ''
+            if (vm.comment.Name === '') {
+                swal("Oops!", "Bạn chưa nhập tên!", "warning");
+            } else if (vm.comment.content == '') {
+                swal("Oops!", "Bạn chưa nhập nội dung bình luận!", "warning");
+            } else {
+                function successCallBack(response) {
+                    if (response.status === 200) {
+                        getComment();
+                        vm.comment = {
+                            PostNewId: $stateParams.postId,
+                            Name: '',
+                            Email: '',
+                            Website: '',
+                            content: ''
+                        }
                     }
                 }
-            }
-            function errorCallBack(response) {
+                function errorCallBack(response) {
 
+                }
+                commentService.createComment(vm.comment).then(successCallBack, errorCallBack);
             }
-            commentService.createComment(vm.comment).then(successCallBack, errorCallBack);
+
         }
 
-        function getListHtgd(){
+        function getListHtgd() {
             function successCallBack(response) {
                 if (response.status === 200) {
                     vm.listHtgd = response.data;
@@ -93,7 +112,7 @@
             postService.getPostsRegarding(3, $stateParams.postId).then(successCallBack, errorCallBack);
         }
 
-        function getListKttc(){
+        function getListKttc() {
             function successCallBack(response) {
                 if (response.status === 200) {
                     vm.listKttc = response.data;
@@ -105,7 +124,7 @@
             postService.getPostsRegarding(2, $stateParams.postId).then(successCallBack, errorCallBack);
         }
 
-        function getListTinTuc(){
+        function getListTinTuc() {
             function successCallBack(response) {
                 if (response.status === 200) {
                     vm.listTintuc = response.data;
@@ -117,19 +136,19 @@
             postService.getPostsRegarding(1, $stateParams.postId).then(successCallBack, errorCallBack);
         }
 
-        vm.redirectSociable = function(link){
+        vm.redirectSociable = function (link) {
             window.open(link, '_blank');
         }
 
-        vm.register = function(){
+        vm.register = function () {
             window.open('https://goo.gl/forms/8DA9bUVew7811spn1', '_blank');
         }
 
-        vm.linkFaceFooter = function() {
+        vm.linkFaceFooter = function () {
             window.open("https://www.facebook.com/Atlanticgam.Vietnam/", "_blank");
         }
 
-        vm.linkTubeFooter = function() {
+        vm.linkTubeFooter = function () {
             window.open("https://www.youtube.com/channel/UC_WaV2Pu3NLEkaFcRtRXw2A", "_blank");
         }
 
