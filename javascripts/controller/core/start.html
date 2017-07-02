@@ -1,35 +1,4 @@
-<!--<div dw-loading="key" dw-loading-options="{spinnerOptions: {lines: 20, length: 20, radius: 20}}">-->
 <div ng-if="!vm.isAdmin">
-	<!--<nav class="navbar navbar-default navbar-fixed-top pt-navbar">
-		<div class="container">
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav" style="margin-left: 80px;">
-					<li class="qt-item-menu main-menu">
-						<a class="navbar-brand qt-navbar-brand" ui-sref="start"><img ng-src="style/icon/logoquestra.png" alt="Dispute Bills"></a>
-					</li>
-					<li class="dropdown qt-dropdown-questra-europe main-menu">
-						<a href="#" class="dropdown-toggle qt-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">QUESTRA EUROPE</a>
-						<ul class="dropdown-menu">
-							<li><a ui-sref="start.gioi-thieu">Giới thiệu Questra</a></li>
-							<li><a ui-sref="start.ban-lanh-dao">Ban Lãnh Đạo QUESTRA</a></li>
-							<li><a ui-sref="start.tam-nhin">Tầm Nhìn QUESTRA</a></li>
-						</ul>
-					</li>
-					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
-					<li class="qt-item-menu main-menu"><a ui-sref="start.quy-dau-tu">GÓI ĐẦU TƯ</a></li>
-					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
-					<li class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(3)">HỖ TRỢ GIAO DỊCH</a></li>
-					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
-					<li class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(1)">TIN TỨC</a></li>
-					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
-					<li class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(2)">ĐẦU TƯ TÀI CHÍNH</a></li>
-					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
-					<li class="qt-item-menu main-menu"><a ui-sref="start.dang-ky">ĐĂNG KÝ THAM GIA</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>-->
-
 	<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -59,15 +28,12 @@
 					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
 					<li ng-click="vm.toggleBtn()" class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(1)">TIN TỨC</a></li>
 					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<li ng-click="vm.toggleBtn()" class="qt-item-menu main-menu"><a ui-sref="start.su-kien">SỰ KIỆN</a></li>
+					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
 					<li ng-click="vm.toggleBtn()" class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(2)">ĐẦU TƯ TÀI CHÍNH</a></li>
 					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
 					<li ng-click="vm.toggleBtn()" class="qt-item-menu main-menu"><a ui-sref="start.dang-ky">ĐĂNG KÝ THAM GIA</a></li>
 				</ul>
-				<!--<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-					<li><a href="../navbar-static-top/">Static top</a></li>
-					<li><a href="../navbar-fixed-top/">Fixed top</a></li>
-				</ul>-->
 			</div>
 			
 		</div>
@@ -86,8 +52,8 @@
 
 			<!-- First slide -->
 			<div class="item" ng-class="{active:!$index}" ng-repeat="slide in vm.slidesData">
-				<img class="qt-full-img-carousel" ng-src="{{slide.src}}" alt="Chicago" style="height: 450px;">
-				<div class="carousel-caption">
+				<img class="qt-full-img-carousel" ng-src="{{slide.src}}" alt="Chicago" style="height: 500px;">
+				<!--<div class="carousel-caption">
 					<h3 class="text-caption-carousel" data-animation="animated bounceInUp">
 						{{slide.caption1}}
 					</h3>
@@ -95,7 +61,7 @@
 						{{slide.caption2}}
 					</h3>
 					<button ng-click="vm.register()" class="btn btn-primary btn-lg qt-btn-register" data-animation="animated zoomInRight">{{slide.nameBtn}}</button>
-				</div>
+				</div>-->
 			</div>
 		</div>
 

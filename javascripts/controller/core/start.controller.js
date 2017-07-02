@@ -207,7 +207,7 @@
             function successCallBack(response) {
                 if (response.status === 200) {
                     angular.forEach(response.data.Data, function (element, index) {
-                        if (index < 5) {
+                        if (index < 4) {
                             vm.listTin.push(element);
                         }
                     });
@@ -232,6 +232,10 @@
 
         if (widthScreen < 767) {
             $('#main-nav').removeClass('navbar-fixed-top');
+        }
+
+        vm.goEvent =  function(){
+            $state.go('start.su-kien');
         }
 
     }

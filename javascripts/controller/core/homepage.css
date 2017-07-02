@@ -580,11 +580,88 @@ fieldset > input, .sa-error-container {
     .footer-tab-register{
         margin-top: 220px;
     }
-
+    #image-bien{
+        margin-top: 30px;
+    }
+    .hop-mhom-title {
+        top: 5px !important;
+        font-size: 20px !important;
+    }
+    .hop-nhom-line {
+        width: 140px !important;
+        top: 40px !important;
+    }
+    .hop-nhom-text {
+        top: 60px !important;
+        font-size: 14px !important;
+        width: 200px !important;
+    }
 }
 
+#image-bien{
+    height: 450px; width: 100%;
+}
 
+.carousel-inner{
+    height: 500px !important;
+}
+.home-questra-vietnam > p{
+    text-align: center;
+}
+#why-us-image{
+    padding: 0px !important;
+    background-image: url('~style/icon/bien.png');
+    min-height: 450px;
+    background-size: contain;
+}
+#why-us-image > img{
+    height: 450px;
+    width: 100%;
+}
+.why-us-title{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.btn-why-us{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 160px !important;
+    border-radius: 20px !important;
+    background-color: white !important;
+    color: black !important;
+    /* padding: 15px; */
+    font-size: 20px !important;
+}
 
+.hop-mhom-title{
+    position: absolute;
+    top: 30px;
+    color: red;
+    left: 70px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.hop-nhom-line{
+    position: absolute;
+    width: 170px;
+    border: 3px solid red;
+    top: 80px;
+    left: 70px;
+}
+.hop-nhom-text{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    font-size: 18px;
+    width: 300px;
+    color: dimgrey;
+    font-weight: bold;
+}
 
 
 
