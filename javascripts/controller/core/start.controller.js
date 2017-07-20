@@ -224,9 +224,9 @@
             $state.go('start.chi-tiet-tin', { postId: id });
         }
 
-        vm.toggleBtn =  function(){
+        vm.toggleBtn = function () {
             if (widthScreen < 767) {
-                $( ".navbar-toggle" ).click();
+                $(".navbar-toggle").click();
             }
         }
 
@@ -234,8 +234,16 @@
             $('#main-nav').removeClass('navbar-fixed-top');
         }
 
-        vm.goEvent =  function(){
-            $state.go('start.su-kien');
+        vm.goEvent = function (id) {
+            if (id === 1) {
+                $state.go('start.chi-tiet-tin', { postId: 19 });
+            }
+            if (id === 2) {
+                $state.go('start.chi-tiet-tin', { postId: 20 });
+            }
+            if (id === 3) {
+                $state.go('start.quy-dau-tu');
+            }
         }
 
     }

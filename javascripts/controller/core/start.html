@@ -4,12 +4,11 @@
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile" aria-expanded="false"
 				 aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-				<a class="navbar-brand qt-navbar-brand" ui-sref="start"><img ng-src="style/icon/logoquestra.png" alt="Dispute Bills"></a>
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
 			<div id="navbar-mobile" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
 				<ul class="nav navbar-nav navbar-center">
@@ -27,7 +26,9 @@
 					<li ng-click="vm.toggleBtn()" class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(3)">HỖ TRỢ GIAO DỊCH</a></li>
 					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
 					<li ng-click="vm.toggleBtn()" class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(1)">TIN TỨC</a></li>
-					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
+					<!--<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>-->
+					<a class="navbar-brand qt-navbar-brand" ui-sref="start"><img class="home-logo" ng-src="style/icon/logoquestra.png" alt="Dispute Bills"></a>
+					<!--<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>-->
 					<li ng-click="vm.toggleBtn()" class="qt-item-menu main-menu"><a ui-sref="start.su-kien">SỰ KIỆN</a></li>
 					<li class="qt-item-menu qt-avia-bullet"><span class="">|</span></li>
 					<li ng-click="vm.toggleBtn()" class="qt-item-menu main-menu"><a href="" ng-click="vm.goListPostPage(2)">ĐẦU TƯ TÀI CHÍNH</a></li>

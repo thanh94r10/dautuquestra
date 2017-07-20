@@ -497,7 +497,13 @@ fieldset > input, .sa-error-container {
 
 @media screen and (min-width: 767px) {
     .qt-navbar-brand{
-        margin-left: 100px !important;
+        margin-left: 0px !important;
+    }
+    .home-logo{
+        width: 100px !important;
+        border-radius: 50%;
+        border: 1px solid #ded5d5;
+        height: 65px !important;;
     }
 }
 @media screen and (max-width: 767px) {
